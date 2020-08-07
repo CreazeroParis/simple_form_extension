@@ -60,22 +60,22 @@ $.simpleForm.onDomReady ($document) ->
   # initialization process when the body has not changed
   return unless $document.is('body')
 
-  $('body').on 'click', 'input.datetime', (e) ->
-    DateTimePicker.forInput($(e.currentTarget), DateTimePicker).show()
+  # $('body').on 'click', 'input.datetime', (e) ->
+  #   DateTimePicker.forInput($(e.currentTarget), DateTimePicker).show()
 
   $('body').on 'click', '.datetime .datetimepicker-trigger', (e) ->
     $input = $(e.currentTarget).closest('.datetime').find('input.datetime')
     DateTimePicker.forInput($input, DateTimePicker).show()
 
-  $('body').on 'click', 'input.date', (e) ->
-    DatePicker.forInput($(e.currentTarget), DatePicker).show()
+  # $('body').on 'click', 'input.date', (e) ->
+  #   DatePicker.forInput($(e.currentTarget), DatePicker).show()
 
   $('body').on 'click', '.date .datetimepicker-trigger', (e) ->
     $input = $(e.currentTarget).closest('.date').find('input.date')
     DatePicker.forInput($input, DatePicker).show()
 
-  $('body').on 'click', 'input.time', (e) ->
-    TimePicker.forInput($(e.currentTarget), TimePicker).show()
+  # $('body').on 'click', 'input.time', (e) ->
+  #   TimePicker.forInput($(e.currentTarget), TimePicker).show()
 
   $('body').on 'click', '.time .datetimepicker-trigger', (e) ->
     $input = $(e.currentTarget).closest('.time').find('input.time')
